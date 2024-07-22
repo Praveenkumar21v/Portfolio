@@ -1,0 +1,104 @@
+
+body {
+  color: white; 
+}
+
+.class {
+  color: #2363c9; 
+}
+
+.btn-outline-danger,
+.btn-outline-primary,
+.btn-outline-dark,
+.btn-outline-info {
+  margin: 10px; 
+}
+
+.iframe{
+  width:600px;
+  height:450px;
+}
+
+@media (min-width: 1024px) {
+  .iframe{
+    width:550px;
+    height:400px;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .justify-content-center {
+    padding-top: 50px; 
+  }
+
+  .btn-outline-danger,
+  .btn-outline-primary,
+  .btn-outline-dark,
+  .btn-outline-info {
+    margin: 10px 15px; 
+  }
+
+  .iframe{
+    width:400px;
+    height:350px;
+  }
+  
+}
+
+@media (max-width: 426px) {
+
+  .iframe {
+    margin-left: -7px;
+    width: 400px;
+    height: 300px;
+}
+
+h1{
+  font-size: 22px;
+  padding: 10px;
+}
+
+}
+
+@media (max-width: 376px) {
+  h1{
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  .iframe {
+    width: 350px;
+    height: 300px;
+}
+
+}
+
+@media (max-width: 320px) {
+  .iframe {
+    margin-left: -10px;
+    width: 300px;
+    height: 300px;
+}
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #61dafb; 
+  }
+  50% {
+    box-shadow: 0 0 20px #61dafb; 
+  }
+  100% {
+    box-shadow: 0 0 10px #61dafb; 
+  }
+}
+
+.btn-outline-danger:hover,
+.btn-outline-primary:hover,
+.btn-outline-secondary:hover,
+.btn-outline-info:hover {
+  animation: glow 1s infinite; 
+}
+
+

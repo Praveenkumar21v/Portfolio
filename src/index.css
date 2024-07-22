@@ -1,0 +1,122 @@
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.btn{
+  width: 180px;
+  align-self: flex-start;
+}
+
+
+h1{
+  text-align: center;
+  color: lightblue;
+  background-color: black;
+}
+
+.FormContainer{
+  gap: 20px;
+  display: grid;
+}
+
+.form-control{
+margin: auto 20px;
+padding: 15px 15px;
+}
+
+.Date{
+  display:grid;
+  gap:10px;
+}
+
+label{
+  font-size: 20px;
+}
+
+.datetime{
+  max-width: 200px;
+  
+
+}
+
+button{
+  max-width: 150px;
+  margin-left: 40%;
+  color:black;
+  background-color:pink;
+  padding:10px 10px;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+
+}
+
+ *{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+
+
+body {
+  background: linear-gradient(to right, #000000, #434343);
+  background-attachment: fixed;
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+  min-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size: 3.5em;
+  }
+
+  body {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+div#home {
+  width: 100%;
+  margin-left: 50px;
+  margin-top: -70px;
+}
+
+.title-message-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: justify;
+  font-family: "Oxygen", sans-serif;
+}
+
+.title-message {
+  position: relative;
+  padding: 50px;
+  animation: fadeInUp 2s ease-in-out;
+  margin-top: 90px;
+  margin-left: 90px;
+}
+
+.main {
+  font-size: 3em;
+  font-weight: bold;
+  text-align: justify;
+  color: #c9bfbf;
+}
+
+.sub {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #ffda79;
+}
+
+.sub .Typewriter {
+  display: inline-block;
+  color: rgb(210, 29, 65);
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: -80px;
+  margin-left: 120px;
+}
+
+img.profile-image {
+  height: 400px;
+  width: 500px;
+}
+
+.social-button {
+  position: relative;
+  top: 30px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  width: 44px;
+  height: 44px;
+  text-decoration: none;
+  border-radius: 100%;
+  background: rgb(186, 184, 184);
+  text-align: center;
+  margin: 5px;
+}
+
+.social-button::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  display: block;
+  width: 0;
+  height: 0;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+.social-button:focus,
+.social-button:hover {
+  color: #fff;
+}
+
+.social-button:focus::after,
+.social-button:hover::after {
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  margin-left: calc(-50% - 1px);
+}
+
+.social-button i,
+.social-button svg {
+  position: relative;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.social-button i {
+  font-size: 25.6px;
+}
+
+.social-button svg {
+  height: 40%;
+  width: 40%;
+}
+
+.social-button--facebook {
+  color: #3b5999;
+}
+
+.social-button--facebook::after {
+  background: #3b5999;
+}
+
+.social-button--linkedin {
+  color: #0077b5;
+}
+
+.social-button--linkedin::after {
+  background: #0077b5;
+}
+
+.social-button--github {
+  color: #6e5494;
+}
+
+.social-button--github::after {
+  background: #6e5494;
+}
+
+.social-button--snapchat {
+  color: #eec900;
+}
+
+.social-button--snapchat::after {
+  background: #eec900;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .title-message {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .main {
+    font-size: 2em;
+  }
+
+  .sub {
+    font-size: 1.5em;
+  }
+
+  .sub .Typewriter {
+    font-size: 2rem;
+  }
+
+  .title-message {
+    margin-top: 60px;
+    margin-left: 60px;
+  }
+
+  .social-button {
+    width: 36px;
+    height: 36px;
+    top: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    font-size: 1.9em;
+  }
+
+  .sub {
+    font-size: 1.2em;
+  }
+
+  .sub .Typewriter {
+
+    font-size: 1.9rem;
+  }
+
+  .title-message {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
+
+  .social-button {
+    margin-top: -90px;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+  }
+}
+
+
+@media (max-width: 426px) {
+  div#home {
+    width: max-content;
+    margin-left: 50px;
+    margin-top: -70px;
+}
+  .main {
+    margin-top: 50px;
+    font-size: 1.4em;
+  }
+  .sub .Typewriter {
+    font-size: 1rem;
+  }
+
+  .sub {
+    font-size: 1em;
+  }
+
+  .title-message {
+    margin-top: -60px;
+    margin-left: -20px;
+}
+
+  .social-button {
+    width: 24px;
+    height: 24px;
+    top: 15px;
+  }
+  .sub .Typewriter {
+    font-size: 23px;
+}
+}
+
+@media (max-width: 376px) {
+  div#home {
+    width: max-content;
+    margin-left: 50px;
+    margin-top: -70px;
+}
+  .main {
+      margin-top: 50px;
+      font-size: 18px;
+  }
+  .sub .Typewriter {
+  
+    font-size: 18px;
+  }
+
+  .sub {
+    font-size: 1em;
+  }
+  .social-button {
+    width: 24px;
+    height: 24px;
+    top: 15px;
+  }
+}
+
+@media screen and (max-width:320px) {
+
+  div#home {
+    width: max-content;
+    margin-left: 50px;
+    margin-top: -70px;
+}
+  .social-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: -80px;
+    margin-left: 70px;
+}
+.social-button {
+  width: 24px;
+  height: 24px;
+  top: 15px;
+}
+.main {
+  margin-top: -68px;
+  margin-left: -58px;
+  font-size: 1.4em;
+}
+
+.sub .Typewriter {
+  font-size: 1.4em;
+  margin-left: -58px;
+  margin-top: -15px;
+}
+.title-message {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+
+}

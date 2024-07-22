@@ -1,0 +1,122 @@
+#about {
+  font-size: 1.1em;
+  width: 100%;
+  text-align: justify; 
+  padding: 40px 0;
+}
+
+.about-section {
+  width: 100%;
+  padding: 60px 0;
+  color: rgb(190, 182, 182);
+  text-align: left; 
+}
+
+h1 {
+  color: crimson;
+  font-size: 2.5em; 
+}
+
+.profile {
+  width: 70rem;
+  height: 40rem;
+  margin-top: -60px;
+  margin-left: -200px;
+}
+
+.my-details {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-right: -100px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  p.about-text {
+    letter-spacing: 1px;
+  }
+}
+
+@media only screen and (max-width: 786px) {
+  .font-details {
+    font-size: 1.8rem !important; 
+  }
+  .my-details {
+    margin-right: 0;
+  }
+  .profile {
+    max-width: 15em;
+  }
+  img.profile-image {
+    height: 332px;
+    width: 325px;
+    margin-top: -113px;
+}
+
+p.about-text {
+  font-size: 12px;
+}
+  
+.buttons-section {
+  display: flex;
+  margin-left: -30px;
+}
+
+img.profile-image {
+  height: 332px;
+  width: 325px;
+  margin-top: -66px;
+}
+
+
+}
+
+@media screen and (max-width: 426px) {
+  .buttons-section {
+    margin-left: -15px;
+}
+
+img.profile-image {
+  height: 247px;
+  width: 312px;
+  margin-top: -15px;
+}
+  
+}
+
+@media screen and (max-width: 376px) {
+  a#letsTalk {
+    font-size: 12px;
+}
+a#resume {
+  font-size: 12px;
+}
+a#github {
+  font-size: 12px;
+}
+a#linkedin {
+  font-size: 12px;
+}
+}
+
+@media screen and (max-width: 320px) {
+p.about-text {
+  font-size: 12px;
+  width: 500px;
+}
+a#letsTalk {
+  font-size: 10px;
+}
+a#resume {
+font-size: 10px;
+}
+a#github {
+font-size: 10px;
+}
+a#linkedin {
+font-size: 10px;
+}
+.buttons-section {
+  margin-left: -28px;
+}
+}

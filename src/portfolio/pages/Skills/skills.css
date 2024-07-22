@@ -1,0 +1,138 @@
+#skills {
+  padding: 60px 0;
+  margin-top: 30px;
+}
+
+h1 {
+  color: #356295;
+}
+
+.card-title {
+  font-size: 2em;
+  font-weight: 700;
+  color: #58a6ff;
+}
+
+.hr-style {
+  border-top: 2px solid #58a6ff;
+}
+
+.card-text {
+  font-size: 1em;
+  color: #ffffff;
+}
+
+.image-style {
+  width: 3em;
+}
+
+.skill-name {
+  font-size: 0.9em;
+  color: #58a6ff;
+}
+
+.focus {
+  transition: transform 0.3s;
+}
+
+.focus:hover {
+  transform: scale(1.05);
+}
+
+.card {
+  animation: fadeIn 1s ease-out;
+  background-color: #161b22;
+  color: #ffffff;
+  border: 1px solid #58a6ff;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.focus{
+ width: '19rem';
+}
+
+.card-text {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.skill-item {
+  margin-right: 20px;
+  width: max-content;
+}
+
+#skills h1 {
+  position: relative;
+  animation: moveUp 3s ease-out;
+}
+
+@keyframes moveUp {
+  100% {
+    transform: translateY(0);
+    background-color: black;
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.font-details {
+  font-size: 3em;
+  font-weight: 500;
+  color: #58a6ff;
+}
+
+.font-details-b {
+  font-size: 3em;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+  margin-left: 50px;
+}
+
+@media screen and (max-width:1024px) {
+  .card-text:last-child {
+    margin-bottom: 0;
+    margin-left: 94px;
+  }
+  
+}
+
+
+@media screen and (max-width:768px) {
+  .focus{
+    width: 100%;  
+    }
+
+    .card-title {
+      font-size: 21px;
+      font-weight: 700;
+      color: #58a6ff;
+  }
+}
+
+@media screen and (max-width:426px) {
+  .focus {
+    width: auto;
+}
+}
